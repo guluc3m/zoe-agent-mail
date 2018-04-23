@@ -67,7 +67,5 @@ class MailAgent:
         except:
             print("Unexpected error:", sys.exc_info())
             return {
-                'data': 'log',
-                'from': 'email',
-                'text': 'Error sending the message. See the shell console for more info or the log file [FUTURE]'
+                'error': 'Error sending the message. Maybe the "To" emails are in wrong format.'
             }
