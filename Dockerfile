@@ -3,6 +3,7 @@ FROM voiser/zoe-agent:latest
 WORKDIR /code
 
 ADD pip-requirements.txt /code
+ADD config.json /code
 RUN pip3 install -r pip-requirements.txt
 
 ADD src /code/src
